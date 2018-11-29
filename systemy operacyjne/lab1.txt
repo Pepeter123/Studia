@@ -1,0 +1,58 @@
+przejscie do lokalizacji: cd sciezka
+
+1.prawy -> wlasciwosci -> czcionka
+color 16
+3. date /t lub echo %time%
+4. chkdsk > raport_dysk.txt
+5.type raport_dysk.txt
+6. dir C:\ /A
+7. dir C:\
+8. dir C:\Windows\system32 /oE
+9. copy C:\users\student C:\users\student\folderP /V
+10. mkdir Kat
+copy C:\windows\system32\?d*.* C:\Users\student\KAT2
+11. rmdir KAT1 (usuwanie pustych katalogow)
+12. rmdir KAT2 /s /q (niepusty, nie kaze potwierdzic)
+13. attrib +s +h "C:\Lokalizacja\plik"
+14. copy con (œcie¿ka) lub plik.txt /y 
+tekst do wpisania ctr+z
+15.prompt $t $g (godzina, >)
+17. @echo off
+IF "%1"=="" (
+echo Brak pamrametru
+echo Poprawne polecenie %0 [katalog docelowy]
+) ELSE (
+del %1\*.bak
+del %1\*.tmp
+)
+pause
+18.  @echo off
+IF "%1"=="" (
+echo Brak pamrametru
+echo Poprawne polecenie %0 katalog_docelowy [rozszerzenie/maska1]
+[maska2][maska3][maska4]
+) ELSE (
+IF NOT "%2"=="" (
+del %1\*.%2
+) ELSE (
+echo Maska nie zostala podana
+)
+IF NOT "%3"=="" del%1\*.%3
+IF NOT "%4"=="" del%1\*.%4
+IF NOT "%5"=="" del%1\*.%5
+)
+pause
+19. @echo off
+echo %username% %processor_architecture% %homedrive% %~dp0
+20. schtasks /create /sc once /tr (œcie¿ka) 
+21. @ echo off
+for /L %%N in (%1,1,%2) do echo %%N
+PAUSE
+22. @echo off
+rename *.txt *.tx_ (lub ren)
+pause
+25. @echo off
+start/realtime notepad.exe
+pause
+29. 
+

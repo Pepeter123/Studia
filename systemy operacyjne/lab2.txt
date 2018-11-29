@@ -1,0 +1,63 @@
+ustawienia -> konta
+4. zarz¹dzanie komputerem -> u¿ytkownicy (utwórz, kopiuj)
+ustawienia -> konta (utwórz, zmieñ tym)
+przejœcie do zarz¹dzana konta (w pasku startu): lusrmgr.msc  
+lub panel -> konta u¿ytkowników
+
+Moj Komputer -> prawy w³aœciwoœæi -> zaawansowane ustawienia systemu -> profile u¿ytkownika
+-profil u¿ytkownia powstaje przy pierwszym zalogowaniu (ustawienia, w³aœciwoœæi, typy, stan)
+aby zmieniæ tryb konta wymagane jest has³o administratora
+! kiedy mozna kopiowaæ profil?
+
+5. panel -> konta -> zarz¹dzaj (usuñ z zachowniem lub bez)
+6. Dodawanie u¿ytkowników: net user nazwa_u¿ytkownika has³o /add 
+Usuwanie u¿ytkowników: net user nazwa_u¿ytkownika /delete 
+B³¹d systemu 5, odmowa dostêpu spowodowana brakiem dostêpu administratora. Nale¿y otworzyæ cmd jako administrator
+7. komputer -> prawy wlasciwosci -> zmian ustawienia (zmiana nazwy u¿ytwkonika)
+8. aby utworzyæ nowe konto trzeba posiadaæ uprawnienia administratora
+9. posiadaj¹c uprawnienia administratora mo¿na zainstalowaæ z³oœliwe oprogramowanie, wy¿¹dziæ szkody na komputerze/ systemie, ograniczenie uprawnieñ, bezpieczeñstwo (w razie ataku, bez admina zbyt wielkich szkód nie zrobimy)
+10. panel\system i zabezpieczenia\narzêdzia administracyjne
+22. 
+@echo off
+if "%1"=="" (
+echo Nie podano parametru
+) Else (
+net user %1
+)
+
+23. net user Praconik /add
+net user Pracownik /time:Pn-Pt,08:00-15:00
+
+24. net accounts /minpwlen:10
+
+25. net account /maxpwage:5
+
+26. @echo off
+If "%1"=="" (
+echo Parametr nie zosta³ podany
+) ELSE (
+net share Peth=%1 /GRANT:%2,FULL
+)
+
+(w cmd 26 (œcie¿ka dostêpu)
+
+27.najpierw lista nazwisk
+1,Jan Kowalski,kolwalskij
+2,Jan Mak,makj
+itp... ile chcemu uzytkownikow
+
+@echo off
+if "%1" == "" (goto wiadomosc)
+if not exist %1 (goto wiadomosc2)
+FOR /F "tokens=2,3 delims=," %%i in (%1) do @NET USER "%%i" %%j /add >nul
+goto koniec
+:wiadomosc:
+echo Nie podano nazwy pliku jako parametru
+goto koniec
+:wiadomosc2:
+echo Dany plik w podanej lokalizacji nie istnieje
+goto koniec
+:koniec
+pause
+
+
