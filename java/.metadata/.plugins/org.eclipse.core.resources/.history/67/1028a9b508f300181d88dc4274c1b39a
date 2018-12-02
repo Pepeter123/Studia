@@ -1,0 +1,114 @@
+package lista6;
+
+import java.util.*;
+
+public class Kalkulator {
+	private int x = 0, y = 0, z = 0, w = 0, p = 0, r = 0, s = 0;
+
+	public Kalkulator(int jeden) {
+		setX(jeden);
+	}
+
+	public Kalkulator(int jeden, int dwa, int trzy, int cztery) {
+		
+		 // x = jeden; y = dwa; z = trzy; w = cztery; tak nie mozna bo x,y... sa prywatne i tak sie nie powinno robic
+		this.setX(jeden); // wywołuje metode SetX z parameterm jeden na rzecz obiektu this
+		this.setY(dwa);
+		this.setZ(trzy);
+		this.setW(cztery);
+	}
+
+	public Kalkulator(int jeden, int dwa, int trzy, int cztery, int piec, int szesc, int siedem) {
+		this.setX(jeden);
+		this.setY(dwa);
+		this.setZ(trzy);
+		this.setW(cztery);
+		this.setP(piec);
+		this.setR(szesc);
+		this.setS(siedem);
+	}
+
+	public int dodawanie(int x) {
+		return x + x;
+
+	}
+
+	public static int dodawanie(int x, int y, int z, int w) {
+
+		return x + y + z + w;
+
+	}
+
+	public int dodawanie(int x, int y, int z, int w, int p, int r, int s) {
+
+		return x + y + z + w + p + r + s;
+
+	}
+
+	public static void main(String[] args) {
+		int a = 0;
+		Scanner liczba = new Scanner(System.in);
+		a = liczba.nextInt();
+
+		Kalkulator k1 = new Kalkulator(a);
+		System.out.println(k1.dodawanie(a));
+		
+		Kalkulator kkk = new Kalkulator(1,2,3,54);
+	}
+
+	public int getX() {
+		return x;
+	}
+
+	public void setX(int x) {
+		this.x = x;
+	}
+
+	public int getY() {
+		return y;
+	}
+
+	public void setY(int y) {
+		this.y = y;
+	}
+
+	public int getZ() {
+		return z;
+	}
+
+	public void setZ(int z) {
+		this.z = z;
+	}
+
+	public int getW() {
+		return w;
+	}
+
+	public void setW(int w) {
+		this.w = w;
+	}
+
+	public int getP() {
+		return p;
+	}
+
+	public void setP(int p) {
+		this.p = p;
+	}
+
+	public int getR() {
+		return r;
+	}
+
+	public void setR(int r) {
+		this.r = r;
+	}
+
+	public int getS() {
+		return s;
+	}
+
+	public void setS(int s) {
+		this.s = s;
+	}
+}

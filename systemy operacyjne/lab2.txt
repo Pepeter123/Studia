@@ -1,18 +1,18 @@
 ustawienia -> konta
-4. zarz¹dzanie komputerem -> u¿ytkownicy (utwórz, kopiuj)
-ustawienia -> konta (utwórz, zmieñ tym)
+4. zarzzdzanie komputerem -> uzytkownicy (utwórz, kopiuj)
+ustawienia -> konta (utwórz, zmien tym)
 przejœcie do zarz¹dzana konta (w pasku startu): lusrmgr.msc  
-lub panel -> konta u¿ytkowników
+lub panel -> konta uzytkowników
 
-Moj Komputer -> prawy w³aœciwoœæi -> zaawansowane ustawienia systemu -> profile u¿ytkownika
--profil u¿ytkownia powstaje przy pierwszym zalogowaniu (ustawienia, w³aœciwoœæi, typy, stan)
-aby zmieniæ tryb konta wymagane jest has³o administratora
+Moj Komputer -> prawy wlasciwosci -> zaawansowane ustawienia systemu -> profile uzytkownika
+-profil u¿ytkownia powstaje przy pierwszym zalogowaniu (ustawienia, wlasciwosci, typy, stan)
+aby zmieniæ tryb konta wymagane jest haslo administratora
 ! kiedy mozna kopiowaæ profil?
 
-5. panel -> konta -> zarz¹dzaj (usuñ z zachowniem lub bez)
-6. Dodawanie u¿ytkowników: net user nazwa_u¿ytkownika has³o /add 
+5. panel -> konta -> zarzadzaj (usuñ z zachowniem lub bez)
+6. Dodawanie uzytkowników: net user nazwa_uzytkownika haslo /add 
 Usuwanie u¿ytkowników: net user nazwa_u¿ytkownika /delete 
-B³¹d systemu 5, odmowa dostêpu spowodowana brakiem dostêpu administratora. Nale¿y otworzyæ cmd jako administrator
+Blad systemu 5, odmowa dostêpu spowodowana brakiem dostêpu administratora. Nalezy otworzyc cmd jako administrator
 7. komputer -> prawy wlasciwosci -> zmian ustawienia (zmiana nazwy u¿ytwkonika)
 8. aby utworzyæ nowe konto trzeba posiadaæ uprawnienia administratora
 9. posiadaj¹c uprawnienia administratora mo¿na zainstalowaæ z³oœliwe oprogramowanie, wy¿¹dziæ szkody na komputerze/ systemie, ograniczenie uprawnieñ, bezpieczeñstwo (w razie ataku, bez admina zbyt wielkich szkód nie zrobimy)

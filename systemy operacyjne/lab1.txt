@@ -14,7 +14,7 @@ copy C:\windows\system32\?d*.* C:\Users\student\KAT2
 11. rmdir KAT1 (usuwanie pustych katalogow)
 12. rmdir KAT2 /s /q (niepusty, nie kaze potwierdzic)
 13. attrib +s +h "C:\Lokalizacja\plik"
-14. copy con (œcie¿ka) lub plik.txt /y 
+14. copy con (sciezka) lub plik.txt /y 
 tekst do wpisania ctr+z
 15.prompt $t $g (godzina, >)
 17. @echo off
@@ -44,7 +44,7 @@ IF NOT "%5"=="" del%1\*.%5
 pause
 19. @echo off
 echo %username% %processor_architecture% %homedrive% %~dp0
-20. schtasks /create /sc once /tr (œcie¿ka) 
+20. schtasks /create /sc once /tr (sciezka) 
 21. @ echo off
 for /L %%N in (%1,1,%2) do echo %%N
 PAUSE

@@ -1,0 +1,28 @@
+package lista5;
+import java.util.*;
+
+public class Autokomis{
+	private String marka = "Audi";
+	
+	
+	public static void main(String[] args) {
+		final int SIZE = 10;
+		ArrayList<Samochod> lista = new ArrayList<>(SIZE);
+		ArrayList<String> modele = new ArrayList<>(SIZE);
+		ArrayList<String> typy = new ArrayList<>(SIZE);
+		ArrayList<String> silniki = new ArrayList<>(SIZE);
+		ArrayList<Double> pojemnosci = new ArrayList<>(SIZE);
+		ArrayList<Integer> lataProdukcji = new ArrayList<>(SIZE);
+		ArrayList<Integer> lataRejestracji = new ArrayList<>(SIZE);
+		ArrayList<Integer> ceny = new ArrayList<>(SIZE);
+		
+		modele.add("");
+		
+		
+	}
+
+
+
+
+
+}

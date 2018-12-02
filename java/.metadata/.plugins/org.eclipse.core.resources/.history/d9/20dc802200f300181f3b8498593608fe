@@ -1,0 +1,55 @@
+package lista6;
+import java.util.*;
+
+public class Kalkulator {
+	private int x = 0, y = 0, z = 0, w = 0, p = 0, r = 0, s = 0;
+
+	public Kalkulator(int jeden) {
+		x = jeden;
+	}
+
+	public Kalkulator(int jeden, int dwa, int trzy, int cztery) {
+		/*x = jeden;
+		y = dwa;
+		z = trzy;
+		w = cztery;
+	*/
+	}
+
+	public Kalkulator(int jeden, int dwa, int trzy, int cztery, int piec, int szesc, int siedem) {
+		x = jeden;
+		y = dwa;
+		z = trzy;
+		w = cztery;
+		p = piec;
+		r = szesc;
+		s = siedem;
+	}
+
+	public static int dodawanie(int x) {
+		return x;
+
+	}
+
+	public static int dodawanie(int x, int y, int z, int w) {
+
+		return x + y + z + w;
+
+	}
+
+	public static int dodawanie(int x, int y, int z, int w, 
+			int p, int r, int s) {
+
+			return x + y + z + w + p + r + s;
+			
+	}
+
+	public static void main (String[] args) {
+		//Scanner liczba = new Scanner(System.in);
+		
+		int k = dodawanie(1,2,2,5);
+		System.out.println("jeden" +dodawanie(1));
+		System.out.println(dodawanie(1, 2, 2, 5, 5, 5, 10));	
+		System.out.println( k);
+	}
+}
