@@ -2,11 +2,19 @@ package lista6;
 
 import java.util.*;
 
+/*
+ * 
+ * 
+ * Program wykonuje funkcje dodawania dla 1,4 i 7 parametrów
+ * 
+ * 
+ */
+
 public class Kalkulator {
 	private int x = 0, y = 0, z = 0, w = 0, p = 0, r = 0, s = 0;
 
 	public Kalkulator(int jeden) {
-		setX(jeden);
+		this.setX(jeden);
 	}
 
 	public Kalkulator(int jeden, int dwa, int trzy, int cztery) {

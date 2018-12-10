@@ -1,11 +1,18 @@
 package lista6;
 
-import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Random;
 
+/*
+ * 
+ * 
+ * Program wype³nia tablicê 10x10 losowymi wartosciami i zapisuje je w excelu
+ * 
+ * 
+ */
 public class RandomArrayToCsv {
-	public static void main(String[] args) throws FileNotFoundException {
+	public static void main(String[] args) throws IOException {
 		PrintWriter zapis = new PrintWriter("zad4.csv");
 		
 		int i = 10, j = 10, a = 0, b = 0;
