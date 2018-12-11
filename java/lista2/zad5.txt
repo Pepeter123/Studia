@@ -1,0 +1,58 @@
+package lista2;
+import java.util.Scanner;
+
+
+public class zad5 {
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	System.out.println("Klawisz 1-dodawanie 2-odejmowanie 3-mnozenie 4-dzielenie");
+	int x;
+	x=sc.nextInt();
+	switch(x) {
+	case 1:{
+		double a, b, c;
+		System.out.println("Podaj liczby do dodania");
+		a=sc.nextDouble();
+		b=sc.nextInt();
+		c=a+b;
+		System.out.print("Po dodaniu "+a+" do "+b+" otrzymujemy liczbe "+c);	
+		break;
+	}
+	case 2:{
+		double a, b, c;
+		System.out.println("Podaj liczby do odjecia");
+		a=sc.nextDouble();
+		b=sc.nextInt();
+		c=a-b;
+		System.out.print("Po odjeciu "+b+" od "+a+" otrzymujemy liczbe "+c);
+		break;
+	}
+	case 3:{
+		double a, b, c;
+		System.out.println("Podaj liczby do wymnozenia");
+		a=sc.nextDouble();
+		b=sc.nextInt();
+		c=a*b;
+		System.out.print("Po wymnozeniu "+a+" z "+b+" otrzymujemy "+c);
+		break;
+	}
+	case 4:{
+		double a, b, c;
+		System.out.println("Podaj licznik");
+		a=sc.nextDouble();
+		System.out.println("Podaj mianownik");
+		b=sc.nextInt();
+		while(b==0){
+			System.out.println("Mianownik nie moze byc rowny 0, podaj inna liczbe");
+			b=sc.nextInt();
+		}
+		c=a/b;
+		System.out.print("Po podzieleniu "+a+" przez "+b+" otrzymujemy liczbe "+c);
+		break;
+	}
+	default:{
+		System.out.println("Wybrales dzialanie sposa mozliwosci kalkulatora");
+	}
+}
+}	
+}

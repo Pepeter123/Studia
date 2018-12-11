@@ -1,0 +1,34 @@
+package lista2;
+import java.util.Scanner;
+
+public class zad2{
+	public static void main(String[] args) {
+		int a,b,c;
+		Scanner sc= new Scanner(System.in);
+		System.out.println("Podaj a");
+		a=sc.nextInt();
+		System.out.println("Podaj b");
+		b=sc.nextInt();
+		System.out.println("Podaj c");
+		c=sc.nextInt();
+		System.out.println("Wzor funkcji to " + a+"x^2+" +b+ "x+" +c);
+		double d, e;
+		d=b*b-4*a*c;
+		if(d>0) {
+		e=Math.sqrt(d);
+		double x1, x2;
+		x1=(double)(e-b)/2*a;
+		x2=(double)(e+b)/2*a;
+		System.out.println("x1 rowne " +x1);
+		System.out.println("x2 rowne " +x2);
+		}
+		else if(d==0) {
+		double x0;
+		x0=-b/2*a;
+		System.out.println("x0 rowne " +x0);
+		}
+		else{
+		System.out.println("brak miejsc zerowych");
+	}
+	}
+	}

@@ -1,0 +1,15 @@
+package lista2;
+import java.util.Scanner;
+
+
+
+public class zad3 {
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	double a, b;
+	System.out.println("Podaj predkosc samochodu w milach");
+	a=sc.nextDouble();
+	b=a*1.6;
+	System.out.println("Predkosc samochodu w km/h to "+b);
+	}
+}

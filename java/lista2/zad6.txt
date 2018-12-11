@@ -1,0 +1,72 @@
+package lista2;
+import java.util.Scanner;
+
+
+
+public class zad6 {
+	public static void main(String[] args) {
+	Scanner sc= new Scanner(System.in);
+	int a,b,c;
+	System.out.println("Podaj cene samochodu w zlotowkach");
+	a=sc.nextInt();
+	while(a>300000){
+		System.out.println("Kwota nie moze byc wyzsza niz 300tys, podaj inna kwote:");
+		a=sc.nextInt();
+	}
+	while(a<0) {
+		System.out.println("Kwota nie moze byc ujemna, podaj inna kwote:");
+		a=sc.nextInt();
+	}
+	System.out.println("Podaj kapital wlasny w zlotowkach");
+	b=sc.nextInt();
+	c=a-b;
+	System.out.println("Wybierz ilosc rat. Dostepne  raty: 24, 48, 60, 72, 96");
+	int x;
+	x=sc.nextInt();
+	switch(x) {
+	case 24: {
+		double d;
+		d=c*0.02;
+		c+=d;
+		c=c/24;
+		System.out.println("Miesieczne zobowiazanie to "+c+"zl");
+		break;
+	}
+	case 48:{
+		double d;
+		d=c*0.03;
+		c+=d;
+		c=c/48;
+		System.out.println("Miesieczne zobowiazanie to "+c+"zl");
+		break;
+	}
+	case 60:{
+		double d;
+		d=c*0.04;
+		c+=d;
+		c=c/60;
+		System.out.println("Miesieczne zobowiazanie to "+c+"zl");
+		break;
+	}
+	case 72:{
+		double d;
+		d=c*0.05;
+		c+=d;
+		c=c/72;
+		System.out.println("Miesieczne zobowiazanie to "+c+"zl");
+		break;
+	}
+	case 96:{
+		double d;
+		d=c*0.06;
+		c+=d;
+		c=c/96;
+		System.out.println("Miesieczne zobowiazanie to "+c+"zl");
+		break;
+	}
+	default:{
+		System.out.println("Nie istnieje mozliwosc tylu rat");
+	}
+	}
+}
+}

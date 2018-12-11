@@ -1,0 +1,23 @@
+package lista2;
+
+public class zad1{
+		
+	public static void main(String[] args) {
+			int szer=9;	
+			for(int x=szer;x>=0;x-=2) {
+					for(int y=x;y>0;y-=2) { 
+						System.out.print(" ");}
+							for(int j=x+1;j<szer;j++) {
+								System.out.print("*");
+					}
+			System.out.println("");				
+				}
+			if(szer%2==0)
+				szer-=1;
+			for(int g=szer/2; g>0; g--) {
+			System.out.print(" ");	}		
+			System.out.print("#");
+		}
+}
+
+
