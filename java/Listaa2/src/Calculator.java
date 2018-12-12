@@ -1,4 +1,6 @@
 
 public class Calculator {
-	public
+	public static void main(String[] args) {
+		
+	}
 }
