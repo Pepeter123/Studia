@@ -1,18 +1,13 @@
 package lista6;
 
 import java.io.*;
+
 import java.util.*;
 import java.util.regex.Pattern;
 
 public class FromFileToArray {
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new FileReader("zad4.csv"));
-
-		
-		@Override
-		public char readLine() {
-			
-		}
 		
 		
 		

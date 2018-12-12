@@ -11,6 +11,20 @@ public class zad1 {
 	sc.close();
 	int len= Integer.toString(x).length();
 	int[] newArray=new int[len];
+	
+	ArrayList<Character> ar = new ArrayList<>();
+	char[] c = Integer.toString(x).toCharArray();
+	
+	for (int i = 0; i < c.length; i++) {
+		ar.add(c[i]);
+	}
+	
+	System.out.println("REEEEEEEEEEEEEEEEEEEEEEEEEEE: ");
+	for (int i = 0; i < ar.size(); i++) {
+		System.out.print(ar.get(i) + " ");
+	}
+	
+	
 	for (int i=0 ; i < len ; i++)
 	{
 	   newArray[i] = x%10;
