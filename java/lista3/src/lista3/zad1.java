@@ -16,6 +16,7 @@ public class zad1 {
 	char[] c = Integer.toString(x).toCharArray();
 	
 	for (int i = 0; i < c.length; i++) {
+		
 		ar.add(c[i]);
 	}
 	

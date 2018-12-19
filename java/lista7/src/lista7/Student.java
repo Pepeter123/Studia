@@ -21,7 +21,7 @@ public class Student {
 	private int indexNr = 0;
 
 	public static void main(String[] args) {
-		int size = 5;
+		int size = 3;
 
 		ArrayList<Student> ar = new ArrayList<>();
 

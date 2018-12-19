@@ -15,6 +15,7 @@ public class Kalkulator {
 
 	public Kalkulator(int jeden) {
 		this.setX(jeden);
+		// this.x = jeden;  To samo co wyżej tylko bez seta
 	}
 
 	public Kalkulator(int jeden, int dwa, int trzy, int cztery) {
@@ -69,6 +70,12 @@ public class Kalkulator {
 		int a = 0, b = 0, c = 0, d = 0, e = 0, f = 0, g = 0;
 		Scanner liczba = new Scanner(System.in);
 
+		Kalkulator kk = new Kalkulator(6, 5, 4, 3);
+		Kalkulator kopiaKk = new Kalkulator(kk);
+		
+	
+		
+		
 		System.out.println("Jaki konstruktor chcesz wywolac?\n1.Jeden\n2.Cztery\n3.Siedem");
 		int choice = liczba.nextInt();
 
@@ -110,7 +117,7 @@ public class Kalkulator {
 	}
 
 	public int getX() {
-		return x;
+		return this.x;
 	}
 
 	public void setX(int x) {
