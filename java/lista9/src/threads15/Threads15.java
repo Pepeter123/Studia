@@ -10,14 +10,13 @@ public class Threads15 implements Runnable{
 
     @Override
     public void run(){
-        while(true) {
+
             System.out.println("Watek "+id);
             try {
-                //usypiamy wątek na 100 milisekund
                 Thread.sleep(300);
             } catch (InterruptedException e) {
                 e.printStackTrace();
-            }
+
         }
     }
 }

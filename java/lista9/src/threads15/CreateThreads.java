@@ -6,7 +6,7 @@ public class CreateThreads {
         Thread[] threads = new Thread[15];
 
         for(int i=0; i<15; i++) {
-            runners[i] = new MyRun(i);
+            runners[i] = new Threads15(i);
         }
 
         for(int i=0; i<15; i++) {
