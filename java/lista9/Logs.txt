@@ -1,3 +1,20 @@
-Type of enemy: warrior
-Damage taken: 67
-Time of attack: 9:42
+
+Type of enemy: Archer
+Damage taken: 56
+Time of attack: 3:22
+
+
+Type of enemy: Archer
+Damage taken: 97
+Time of attack: 19:52
+
+
+Type of enemy: Archer
+Damage taken: 97
+Time of attack: 19:52
+
+
+Type of enemy: Archer
+Damage taken: 97
+Time of attack: 19:52
+

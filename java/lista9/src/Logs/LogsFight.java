@@ -22,7 +22,7 @@ public class LogsFight implements Runnable{
     private int time;
     private int hour =  rand.nextInt(24)+1;
     private int minute =  rand.nextInt(60);
-    private String[] types = { "mage", "warrior", "archer" };
+    private String[] types = { "Mage", "Warrior", "Archer" };
     private String type = types[rand.nextInt(types.length)];
 
 
@@ -30,12 +30,14 @@ public class LogsFight implements Runnable{
     @Override
     public void run() {
         try {
-            PrintWriter pw = new PrintWriter("Logs.txt");
-                pw.print("Type of enemy: " + this.getType() + "\nDamage taken: " + this.getDamage() +
-                        "\nTime of attack: " + this.getHour() + ":" + this.getMinute() );
+            BufferedWriter pw = new BufferedWriter(new FileWriter("Logs.txt", true));
+                pw.append("\nType of enemy: ").append(this.getType()).append("\nDamage taken: ").append(String.valueOf(this.getDamage()))
+                        .append("\nTime of attack: ").append(String.valueOf(this.getHour())).append(":")
+                        .append(String.valueOf(this.getMinute())).append("\n\n");
                 pw.close();
+
             BufferedReader br = new BufferedReader(new FileReader("Logs.txt"));
-            while(br.readLine() != null)
+            while(br.hashCode(true))
                 br.readLine();
                 br.close();
 
