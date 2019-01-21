@@ -1,5 +1,7 @@
 package Logs;
 
+import java.util.Random;
+
 public class LogsFight implements Runnable{
 
     public static void main(String[] args){
@@ -9,11 +11,13 @@ public class LogsFight implements Runnable{
 
     }
 
-    private int damage;
+    private int damage = rand.nextInt(90)+10;
     private int time;
-    private int hour;
-    private int minute;
-    private String type;
+    private int hour =  rand.nextInt(24)+1;
+    private int minute =  rand.nextInt(60);
+    private final String type = rand.nextInt(types.length);
+
+    String[] types = { "mage", "warrior", "archer" };
 
     @Override
     public void run() {
@@ -21,6 +25,7 @@ public class LogsFight implements Runnable{
 
     }
 
+    static Random rand = new Random();
 
     public int getDamage() {
         return damage;
