@@ -21,7 +21,7 @@ public class LogsFight implements Runnable{
     private int damage = rand.nextInt(90)+10;
     private int time;
     private int hour =  rand.nextInt(24)+1;
-    private int minute =  rand.nextInt(60);
+    private int minute =  rand.nextInt(50);
     private String[] types = { "Mage", "Warrior", "Archer" };
     private String type = types[rand.nextInt(types.length)];
 
@@ -37,9 +37,10 @@ public class LogsFight implements Runnable{
                 pw.close();
 
             BufferedReader br = new BufferedReader(new FileReader("Logs.txt"));
-            while(br.hashCode(true))
-                br.readLine();
-                br.close();
+            while(br.readLine() != null){
+                System.out.println(br.readLine());
+            }
+            br.close();
 
 
             }

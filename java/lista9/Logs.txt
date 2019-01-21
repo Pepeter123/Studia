@@ -1,20 +1,15 @@
 
 Type of enemy: Archer
-Damage taken: 56
-Time of attack: 3:22
+Damage taken: 18
+Time of attack: 17:30
 
 
 Type of enemy: Archer
-Damage taken: 97
-Time of attack: 19:52
+Damage taken: 18
+Time of attack: 17:30
 
 
 Type of enemy: Archer
-Damage taken: 97
-Time of attack: 19:52
-
-
-Type of enemy: Archer
-Damage taken: 97
-Time of attack: 19:52
+Damage taken: 18
+Time of attack: 17:30
 
