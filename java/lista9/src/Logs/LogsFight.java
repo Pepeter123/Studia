@@ -10,7 +10,7 @@ public class LogsFight implements Runnable{
         t.start();
 
     }
-
+    private int SIZE = 3;
     private int damage = rand.nextInt(90)+10;
     private int time;
     private int hour =  rand.nextInt(24)+1;
@@ -21,6 +21,12 @@ public class LogsFight implements Runnable{
 
     @Override
     public void run() {
+        LogsFight[] l = new LogsFight[SIZE];
+        for(int i = 0; i < l.length; i++){
+            l[i] = new LogsFight();
+            l[i].t.start();
+        }
+
 
 
     }
