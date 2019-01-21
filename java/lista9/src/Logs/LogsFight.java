@@ -1,18 +1,21 @@
 package Logs;
 
+
+import java.io.*;
 import java.util.Random;
 
 public class LogsFight implements Runnable{
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Runnable r = new LogsFight();
         Thread t = new Thread(r);
         Thread[] l = new Thread[SIZE];
         for (int i = 0; i < l.length; i++) {
             l[i] = new Thread(r); //nowy watek, ktory jako parametr przyjmuje LogsFight
             l[i].start();
-
         }
+
+
     }
     private static int SIZE = 3;
     private int damage = rand.nextInt(90)+10;
@@ -26,7 +29,15 @@ public class LogsFight implements Runnable{
 
     @Override
     public void run() {
-
+        try {
+            PrintWriter pw = new PrintWriter(new FileWriter("Logs.txt"))
+            for (int i = 0; i < l.length; i++) {
+                pw.print("Type of enemy: " + l[i].getType );
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
         }
 
 
@@ -39,40 +50,25 @@ public class LogsFight implements Runnable{
         return damage;
     }
 
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
 
     public int getTime() {
         return time;
     }
 
-    public void setTime(int time) {
-        this.time = time;
-    }
 
     public int getHour() {
         return hour;
     }
 
-    public void setHour(int hour) {
-        this.hour = hour;
-    }
 
     public int getMinute() {
         return minute;
     }
 
-    public void setMinute(int minute) {
-        this.minute = minute;
-    }
 
     public String getType(){
 
         return this.type ;
     }
 
-    public void setType(String a){
-        this.type = a;
-    }
 }
