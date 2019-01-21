@@ -4,32 +4,34 @@ import java.util.Random;
 
 public class LogsFight implements Runnable{
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Runnable r = new LogsFight();
         Thread t = new Thread(r);
-        t.start();
+        Thread[] l = new Thread[SIZE];
+        for (int i = 0; i < l.length; i++) {
+            l[i] = new Thread(r); //nowy watek, ktory jako parametr przyjmuje LogsFight
+            l[i].start();
 
+        }
     }
-    private int SIZE = 3;
+    private static int SIZE = 3;
     private int damage = rand.nextInt(90)+10;
     private int time;
     private int hour =  rand.nextInt(24)+1;
     private int minute =  rand.nextInt(60);
-    private final String type = rand.nextInt(types.length);
-
     String[] types = { "mage", "warrior", "archer" };
+    private String type = types[rand.nextInt(types.length)];
+
+
 
     @Override
     public void run() {
-        LogsFight[] l = new LogsFight[SIZE];
-        for(int i = 0; i < l.length; i++){
-            l[i] = new LogsFight();
-            l[i].t.start();
+
         }
 
 
 
-    }
+
 
     static Random rand = new Random();
 
