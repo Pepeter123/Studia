@@ -2,10 +2,15 @@ package threads15;
 
 public class Threads15 implements Runnable{
 
-    private int id;
+    private static int id; //bez static za każdym razem tworze nowe pole.
+    // w tym przypadku przydzielam jedno pole do wszystkich obiektów(static - nalezy do klasy)
 
-    Threads15(int id){
+   /* Threads15(int id){
         this.id = id;
+    }
+*/
+
+    public Threads15() { id++;
     }
 
     @Override

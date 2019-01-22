@@ -1,0 +1,16 @@
+3.a) .. - katalog macierzysty
+. - katalog bierz¹cy 
+
+d) 4096 teoretycznie z czego 128 jest zarezerwowane
+e) 4095 - 127 zarezerwowane na system
+f) link1 nie istnieje
+g)zawartosc pliku zostala usunieta, poczatkowe bloki zostaly zwolnione
+h)nie umo¿liwia utworzenia po³¹czenia twardego (nie da sie odznaczyc soft link)
+4. Fragmentacja wewnêtrza kszta³tuje siê gorzej, gdy¿ jedna jednostka zajmuje caly blok a 3 pozostaja puste
+a) 4096 - 128
+s5fs - wpisac w google
+b) pierwsza pozycja zawiera ifnormacje o linkach
+c) inditect blok - bloki posrednie w Oblocks table
+e) przy miekkim dowiazaniu zajmuje przestrzen dyskowa a twarde nie
+aby usunac dowiazanie twarde powoduje usuniecie pliku 
+h) mozna utworzyc dowiazanie miekkie i twarde do katalogu
