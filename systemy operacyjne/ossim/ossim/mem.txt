@@ -1,0 +1,25 @@
+
+
+etc.)...
+What is the formula used to know the physical address corresponding to the logical address of a process in segmentation memory management? 
+Indicate the corresponding physical address of processes in the table. If address does not match the logical address space of the process indicate an error, and if the address is in a swapped segment indicate segmentation error 
+Process
+@logical address
+physical address
+P1
+@ 3
+
+P1
+@ 13
+
+P2
+@ 7
+
+P3
+@ 0
+
+P3
+@ 41
+
+Data
+

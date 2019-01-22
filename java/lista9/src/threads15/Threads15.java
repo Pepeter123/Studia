@@ -1,22 +1,31 @@
 package threads15;
 
-public class Threads15 implements Runnable{
+import java.text.*;
+import java.util.Date;
 
-    private int id;
+public class Threads15 implements Runnable {
+    private DateFormat df = new SimpleDateFormat("yyyy.MM.dd");
+    private Date date = new Date();
 
-    Threads15(int id){
-        this.id = id;
+    //private static int id; //bez static za każdym razem tworze nowe pole.
+    // w tym przypadku przydzielam jedno pole do wszystkich obiektów(static - nalezy do klasy)
+    //Threads15(int id){
+    //this.id = id;
+    //}
+
+    Threads15() {
     }
 
     @Override
-    public void run(){
-
-            System.out.println("Watek "+id);
-            try {
-                Thread.sleep(300);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-
+    public void run() {
+        //id++;
+        System.out.println("Watek " + Thread.currentThread().getId() + " " + df.format(date) );
+        try {
+            //usypiamy wątek na 300 milisekund
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+
     }
 }
