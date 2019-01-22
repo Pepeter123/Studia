@@ -8,6 +8,9 @@ public class CreateThreads {
         for (int i = 0; i < 15; i++) {
             runners[i] = new Threads15();
         }
+        for(int i=0; i<15; i++) {
+            runners[i] = new Threads15();
+        }
 
         for (int i = 0; i < 15; i++) {
             threads[i] = new Thread(runners[i]);

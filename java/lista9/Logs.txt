@@ -1,0 +1,15 @@
+
+Type of enemy: Warrior
+Damage taken: 15
+Time of attack: 6:35
+
+
+Type of enemy: Warrior
+Damage taken: 15
+Time of attack: 6:35
+
+
+Type of enemy: Warrior
+Damage taken: 15
+Time of attack: 6:35
+
