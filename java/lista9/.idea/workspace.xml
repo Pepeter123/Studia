@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83b4e20c-1614-4514-8f05-8268c7ae791f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Logs/LogsFightRun.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/out/production/lista9/Logs/LogsFight.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/out/production/lista9/Logs/Looogs.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/out/production/lista9/META-INF/lista9.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/src/Logs/LogsFight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lista9/src/Logs/Looogs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../info.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lista9/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lista9/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lista9/out/production/lista9/threads15/Threads15.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lista9/out/production/lista9/threads15/Threads15.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lista9/src/threads15/CreateThreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lista9/src/threads15/CreateThreads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lista9/src/threads15/Threads15.java" beforeDir="false" afterPath="$PROJECT_DIR$/../lista9/src/threads15/Threads15.java" afterDir="false" />
-    </list>
+    <list default="true" id="83b4e20c-1614-4514-8f05-8268c7ae791f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,21 +32,33 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Logs/LogsFightRun.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="20" selection-end-column="29" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1562#1563#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-                <element signature="e#1620#1621#0" expanded="true" />
-                <element signature="e#1647#1648#0" expanded="true" />
-                <element signature="e#1677#1678#0" expanded="true" />
-                <element signature="e#1704#1705#0" expanded="true" />
-                <element signature="e#1736#1737#0" expanded="true" />
-                <element signature="e#1765#1766#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Logs/Looogs.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1601#1602#0" expanded="true" />
+                <element signature="e#1630#1631#0" expanded="true" />
+                <element signature="e#1659#1660#0" expanded="true" />
+                <element signature="e#1686#1687#0" expanded="true" />
+                <element signature="e#1716#1717#0" expanded="true" />
+                <element signature="e#1743#1744#0" expanded="true" />
+                <element signature="e#1775#1776#0" expanded="true" />
+                <element signature="e#1804#1805#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -89,6 +87,7 @@
         <option value="$PROJECT_DIR$/src/lab9/CreateThreads.java" />
         <option value="$PROJECT_DIR$/src/lab9/Threads15.java" />
         <option value="$PROJECT_DIR$/src/Logs/LogsFightRun.java" />
+        <option value="$PROJECT_DIR$/src/Logs/Looogs.java" />
       </list>
     </option>
   </component>
@@ -124,6 +123,12 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="lab9" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="lista9-project" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lista9-project" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Logs" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -132,7 +137,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548160122557" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548160195519" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -205,8 +210,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13161875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13313162" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -257,18 +263,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Logs/LogsFightRun.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="20" selection-end-column="29" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1562#1563#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1620#1621#0" expanded="true" />
-            <element signature="e#1647#1648#0" expanded="true" />
-            <element signature="e#1677#1678#0" expanded="true" />
-            <element signature="e#1704#1705#0" expanded="true" />
-            <element signature="e#1736#1737#0" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Logs/Looogs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1601#1602#0" expanded="true" />
+            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#1659#1660#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1716#1717#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1775#1776#0" expanded="true" />
+            <element signature="e#1804#1805#0" expanded="true" />
           </folding>
         </state>
       </provider>
