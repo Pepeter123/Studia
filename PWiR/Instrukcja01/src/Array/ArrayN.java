@@ -64,7 +64,7 @@ public class ArrayN {
         System.out.println();
 
 
-        int tmp = 0;
+        int tmp;
         for (int i = 0; i < ar.size() / 2; i++) {
             tmp = ar.get(i);
             ar.set(i, ar.get(ar.size() - 1 - i));
@@ -72,9 +72,7 @@ public class ArrayN {
         }
 
         System.out.println("Fist element last etc. :");
-        for (int b : ar) {
-            System.out.print(b + " ");
-        }
+        for (int b : ar) System.out.print(b + " ");
 
     }
 }
