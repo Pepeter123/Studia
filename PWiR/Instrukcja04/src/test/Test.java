@@ -24,7 +24,13 @@ public class Test {
             System.out.print(e + " ");
         }
 
-        for(int i = 0; i < 4; i++) {
+        public void threadsArray(int[] a; int n; int id){
+            for (int i = id; i < SIZE / n; i++);
+
+
+        }
+
+        for (int i = 0; i < 4; i++) {
             Thread[] t = new Thread(new MinMax())[i];
 
             t[i].start();

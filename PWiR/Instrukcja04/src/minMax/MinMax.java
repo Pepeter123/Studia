@@ -6,26 +6,26 @@ import java.util.Arrays;
 public class MinMax extends Thread {
     final private static int SIZE = 10;
     public static int[] a1 = new int[SIZE];
-    private static int[] a2;
-    private static int minimum;
-    private static int maximum;
-    private static int sum;
+    private int[] a2;
+    private int minimum;
+    private int maximum;
+    private int sum;
 
   public MinMax(int[] a2){
 
     countAll();
   }
-   private static int min() {
+   private int min() {
         Arrays.sort(a1);
         return minimum = a1[0];
     }
 
-    private static int max() {
+    private  int max() {
         Arrays.sort(a1);
         return maximum = a1[SIZE - 1];
     }
 
-    private static int sum() {
+    private int sum() {
         int s = 0;
         for (int e : a1
         ) {
@@ -33,11 +33,7 @@ public class MinMax extends Thread {
         }
         return sum = s;
     }
-    public static void  threadsArray(int[] a, int n, int id){
-        for(int i = id ; i < SIZE / n; i++)
 
-
-    }
     private void countAll(){
       min();
       max();
