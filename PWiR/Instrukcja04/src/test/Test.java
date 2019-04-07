@@ -20,16 +20,16 @@ public class Test {
             a1[i] = rd.nextInt(100);
         }
 
-        System.out.println();
         for (int e : a1) {
             System.out.print(e + " ");
         }
 
-        Thread[] t = new Thread(new MinMax())[4];
-        for(Thread e: t){
-        t[e].start();
-        t[e].join();
-}
+        for(int i = 0; i < 4; i++) {
+            Thread[] t = new Thread(new MinMax())[i];
+
+            t[i].start();
+            t[i].join();
+        }
         long runTimeEnd = System.currentTimeMillis();
         System.out.println("Run Time: " + (runTimeEnd - runTimeStart) + "ms");
     }

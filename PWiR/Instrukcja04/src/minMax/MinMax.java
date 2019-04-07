@@ -33,6 +33,11 @@ public class MinMax extends Thread {
         }
         return sum = s;
     }
+    public static void  threadsArray(int[] a, int n, int id){
+        for(int i = id ; i < SIZE / n; i++)
+
+
+    }
     private void countAll(){
       min();
       max();
