@@ -1,64 +1,49 @@
 package minMax;
 
-
-import java.util.Arrays;
-
 public class MinMax extends Thread {
-    final private static int SIZE = 10;
-    public static int[] a1 = new int[SIZE];
-    private int[] a2;
+    private int[] tab;
     private int minimum;
     private int maximum;
     private int sum;
 
-  public MinMax(int[] a2){
-
-    countAll();
-  }
-   private int min() {
-        Arrays.sort(a1);
-        return minimum = a1[0];
+    public MinMax(int[] tab) {
+        this.tab = tab;
     }
 
-    private  int max() {
-        Arrays.sort(a1);
-        return maximum = a1[SIZE - 1];
-    }
-
-    private int sum() {
-        int s = 0;
-        for (int e : a1
-        ) {
-            s += e;
+    private void countMinMaxSum() {
+        minimum = tab[0];
+        maximum = tab[0];
+        for (int value : tab) {
+            if (value < minimum)
+                minimum = value;
+            if (value > maximum)
+                maximum = value;
+            sum += value;
         }
-        return sum = s;
     }
-
-    private void countAll(){
-      min();
-      max();
-      sum();
-    }
-
 
     @Override
     public void run() {
-        /*
-        System.out.println("\nMin: " + min());
-        System.out.println("Max: " + max());
-        System.out.println("Sum: " + sum());
- */
+/*
+        System.out.println();
+        for (int i : tab)
+          System.out.print(i + " ");
+*/
+        this.countMinMaxSum();
+
+//        System.out.println("\n" + getMinimum() + " "  + getMaximum() + " " + getSum());
+
     }
 
-    public static int getMinimum() {
+    public int getMinimum() {
         return minimum;
     }
 
-    public static int getMaximum() {
+    public int getMaximum() {
         return maximum;
     }
 
-    public static int getSum() {
+    public int getSum() {
         return sum;
     }
 
