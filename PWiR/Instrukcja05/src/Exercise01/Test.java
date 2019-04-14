@@ -6,21 +6,23 @@ import Exercise01.roots.Roots;
 
 import java.util.concurrent.Semaphore;
 
-public class Test {
-    private static Data data = new Data();
-    private static Delta delta = new Delta(data);
-    private static Thread roots = new Thread(new Roots(data, delta));
+public class Test extends Thread {
 
-    static Semaphore semaphore = new Semaphore(1);
-
+    public static Semaphore semaphore = new Semaphore(0);
 
     public static void main(String[] args){
 
+        Data data = new Data();
+        Delta delta = new Delta(data);
+        Roots roots = new Roots(data, delta);
 
-        data.run();
-        delta.run();
-        roots.run();
+        Thread[] threads = new Thread[3];
+        threads[0] = new Thread(data);
+        threads[1] = new Thread(delta);
+        threads[2] = new Thread(roots);
 
+        for(Thread t: threads)
+        t.start();
 
     }
 }

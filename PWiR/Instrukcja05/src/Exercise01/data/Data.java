@@ -1,5 +1,6 @@
 package Exercise01.data;
 
+import Exercise01.Test;
 import com.sun.xml.internal.bind.annotation.OverrideAnnotationOf;
 
 import java.util.Scanner;
@@ -19,6 +20,7 @@ public class Data implements Runnable {
         System.out.println("Write C : ");
         setC(sc.nextDouble());
 
+        Test.semaphore.release();
     }
 
     public double getA() {

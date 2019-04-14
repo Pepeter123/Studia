@@ -16,12 +16,21 @@ public class Roots implements Runnable {
 
     @Override
     public void run() {
-        if (delta.getDelta() < 0) System.out.println("There is no roots for delta < 0");
-        else {
-            setX1((-1 * data.getB() - Math.sqrt(delta.getDelta())) / (2 * data.getA()));
-            setX2((-1 * data.getB() + Math.sqrt(delta.getDelta())) / (2 * data.getA()));
-            System.out.println("x1 = " + getX1() + " x2 = " + getX2());
+        try {
+            Delta.semaphore.acquire();
+
+            if (delta.getDelta() < 0) System.out.println("There is no roots for delta < 0");
+            else {
+                setX1((-1 * data.getB() - Math.sqrt(delta.getDelta())) / (2 * data.getA()));
+                setX2((-1 * data.getB() + Math.sqrt(delta.getDelta())) / (2 * data.getA()));
+                System.out.println("x1 = " + getX1() + " x2 = " + getX2());
+            }
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
+        Delta.semaphore.release();
+
     }
 
 
