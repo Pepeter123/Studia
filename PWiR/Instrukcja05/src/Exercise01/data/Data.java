@@ -12,6 +12,7 @@ public class Data implements Runnable {
 
     @Override
     public void run() {
+
         Scanner sc = new Scanner(System.in);
         System.out.println("Write A : ");
         setA(sc.nextDouble());

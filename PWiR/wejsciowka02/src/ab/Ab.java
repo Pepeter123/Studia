@@ -14,16 +14,11 @@ public class Ab implements Runnable {
         for (int i = 0; i < 10; i++) {
             try {
                 Test.semaphore.acquire();
-
                 Scanner sc = new Scanner(System.in);
                 System.out.println("A = ");
-                int a = sc.nextInt();
-                setA(a);
+                this.setA(sc.nextInt());
                 System.out.println("B = ");
-                int b = sc.nextInt();
-                setA(b);
-
-
+                this.setB(sc.nextInt());
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
