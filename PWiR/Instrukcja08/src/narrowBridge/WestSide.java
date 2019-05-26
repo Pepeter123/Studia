@@ -17,15 +17,12 @@ public class WestSide implements Runnable {
         while (true)
         {
             try {
-                Bridge.semaphoreWest.acquire();
                 Integer a = WestCarQueue.take();
                 System.out.println(Thread.currentThread().getName() + " / " + a + " went through the bridge");
-                Thread.sleep(5000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-            Bridge.semaphoreEast.release();
 
         }
     }

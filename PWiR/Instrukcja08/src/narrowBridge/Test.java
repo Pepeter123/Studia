@@ -4,7 +4,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 public class Test {
 
-    private final s1tatic int  WEST_QUEUE_SIZE = 10;
+    private final static int  WEST_QUEUE_SIZE = 10;
     private final static int  EAST_QUEUE_SIZE = 10;
 
     public static void main(String[] args) throws Exception {
@@ -28,15 +28,13 @@ public class Test {
 
 
 
-        for (int i = 0; i < EAST_QUEUE_SIZE; i++) {
+        for (int i = 0, j = EAST_QUEUE_SIZE; i < EAST_QUEUE_SIZE; i++, j++) {
             threadsEast[i] = new Thread(westArray[i]);
-            threadsEast[i].start();
-        }
-
-        for (int j = 0; j < WEST_QUEUE_SIZE; j++) {
             threadsWest[j] = new Thread(eastArray[j]);
+            threadsEast[i].start();
             threadsWest[j].start();
         }
+
 
     }
 }
