@@ -4,7 +4,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 
 public class Test {
 
-    private final static int  WEST_QUEUE_SIZE = 10;
+    private final s1tatic int  WEST_QUEUE_SIZE = 10;
     private final static int  EAST_QUEUE_SIZE = 10;
 
     public static void main(String[] args) throws Exception {
