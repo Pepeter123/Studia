@@ -4,24 +4,25 @@ public class Watek3 extends Thread {
 
     private ArrayBlockingQueue<Integer> kolejka2;
 
-    public Watek3(ArrayBlockingQueue<Integer> kolejka_2) {
+    Watek3(ArrayBlockingQueue<Integer> kolejka_2) {
         kolejka2 = kolejka_2;
     }
 
     @Override
     public void run() {
-        try {
-            for (int i = 0; i < kolejka2.size(); i++) {
+        while (true) {
+            try {
 
                 Integer y = kolejka2.take();
-            }
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
 
-        System.out.println(this.getName() + " wystartował.");
-        for (int i = 0; i < 5; i++) {
-            System.out.println(this.getName() + " " + i);
+                System.out.println(Thread.currentThread().getName() + " pobral policzone: " + y);
+
+                Thread.sleep(2000);
+
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
         }
     }
 }

@@ -4,7 +4,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 public class Main {
     private final static int SIZE = 10;
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         ArrayBlockingQueue<Integer> kolejka1 = new ArrayBlockingQueue<>(SIZE);
         ArrayBlockingQueue<Integer> kolejka2 = new ArrayBlockingQueue<>(SIZE);
@@ -22,31 +22,22 @@ public class Main {
         /*W1*/
         for (int i = 0; i < W1_SIZE; i++) {
             w1[i] = new Watek1(kolejka1);
-            w1[i].setName("W1_" + i);
+            Thread t1 = new Thread(w1[i], "W1_" + (i + 1));
+            t1.start();
         }
 
         /*W2*/
         for (int i = 0; i < W2_SIZE; i++) {
             w2[i] = new Watek2(kolejka1, kolejka2);
-            w2[i].setName("W2_" + i);
+            Thread t1 = new Thread(w2[i], "W2_" + (i + 1));
+            t1.start();
         }
 
         /*W3*/
         for (int i = 0; i < W3_SIZE; i++) {
             w3[i] = new Watek3(kolejka2);
-            w3[i].setName("W3_" + i);
+            Thread t1 = new Thread(w3[i], "W3_" + (i + 1));
+            t1.start();
         }
-
-        for (int i = 0; i < W1_SIZE; i++) {
-            w1[i].start();
-        }
-        for (int i = 0; i < W2_SIZE; i++) {
-            w2[i].start();
-        }
-        for (int i = 0; i < W3_SIZE; i++) {
-            w3[i].start();
-        }
-
-
     }
 }

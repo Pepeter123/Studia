@@ -5,29 +5,27 @@ public class Watek1 extends Thread {
 
     private ArrayBlockingQueue<Integer> kolejka1;
 
-    public Watek1(ArrayBlockingQueue<Integer> kolejka) {
+    Watek1(ArrayBlockingQueue<Integer> kolejka) {
         kolejka1 = kolejka;
     }
 
 
-    Random rand = new Random();
+    private Random rand = new Random();
 
 
     @Override
     public void run() {
-        try {
+        while (true) {
+            try {
+                int i = rand.nextInt(9);
+                kolejka1.put(i);
+                System.out.println(Thread.currentThread().getName() + " daje " + i);
 
-            for (int i = 0; i < kolejka1.size(); i++) {
+                Thread.sleep(2000);
 
-                kolejka1.put(rand.nextInt(10));
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        System.out.println(this.getName() + " wystartował.");
-        for (int i = 0; i < 5; i++) {
-            System.out.println(this.getName() + " " + i);
         }
     }
 }
