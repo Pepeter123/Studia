@@ -37,7 +37,7 @@ public class Test {
 
         Paletter[] paletters = new Paletter[numPaletters];
         for (int i = 0, k = packagers.length; i < paletters.length; i++, k++) {
-            paletters[i] = new Paletter(conveyorBelt, secondConveyorBelt);
+            paletters[i] = new Paletter(secondConveyorBelt);
             threads[k] = new Thread(paletters[i]);
             threads[k].setName("Packager" + (i + 1));
             threads[k].start();
