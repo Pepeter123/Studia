@@ -4,12 +4,13 @@ import java.util.concurrent.Semaphore;
 
 public class Bridge {
 
-    public Semaphore getEastSemaphore() {
-        return eastSemaphore;
-    }
+    public int getSemaphore(String direction)
+    {
+        if(direction.equals("east")) return eastSemaphore.availablePermits();
 
-    public Semaphore getWestSemaphore() {
-        return westSemaphore;
+        else if(direction.equals("west")) return westSemaphore.availablePermits();
+
+        return 0;
     }
 
     private Semaphore eastSemaphore = new Semaphore(0);

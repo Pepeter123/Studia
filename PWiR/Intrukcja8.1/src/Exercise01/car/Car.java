@@ -15,19 +15,17 @@ public class Car implements Runnable {
 
     @Override
     public void run() {
-        if (this.bridge.getWestSemaphore().availablePermits() == 1) {
-            while (direction.equals("west")) {
-                System.out.println(Thread.currentThread().getName() + " from " + direction + " Went through the bridge");
-                break;
-            }
-        } else if (this.bridge.getEastSemaphore().availablePermits() == 1) {
-            while (direction.equals("east")) {
-                System.out.println(Thread.currentThread().getName() + " from " + direction + " Went through the bridge");
-                break;
-            }
-        } else {
-            System.out.println(Thread.currentThread().getName() + " is waiting");
+        while (this.bridge.getSemaphore(direction) == 1) {
+            System.out.println(Thread.currentThread().getName() + " from " + direction + " Went through the bridge");
+            break;
         }
+        while (this.bridge.getSemaphore(direction) == 1) {
+            System.out.println(Thread.currentThread().getName() + " from " + direction + " Went through the bridge");
+            break;
+        }
+
+        System.out.println(Thread.currentThread().getName() + " is waiting");
     }
+
 }
 
