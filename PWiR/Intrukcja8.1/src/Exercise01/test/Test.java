@@ -24,7 +24,6 @@ public class Test {
             threads[i] = new Thread(cars[i]);
             threads[i].setName("Car_" + i);
             threads[i].start();
-
         }
 
         while (true) {
@@ -38,7 +37,6 @@ public class Test {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-
         }
 
 
