@@ -9,18 +9,16 @@ public class Car implements Runnable {
 
     public Car(String direction, Bridge bridge) {
         this.direction = direction;
+        this.bridge = bridge;
     }
 
 
     @Override
     public void run() {
-        if (this.direction.equals("west")) {
-            while (this.bridge.getWestSemaphore().availablePermits() == 1) {
-                System.out.println(Thread.currentThread().getName() + " Went through the bridge");
-
+           if (this.bridge.getWestSemaphore().availablePermits() == 1 || this.bridge.getEastSemaphore().availablePermits() == 1) {
+                System.out.println(Thread.currentThread().getName() + " from " + direction + " Went through the bridge");
             }
-            else
-        }
 
+        }
     }
-}
+
