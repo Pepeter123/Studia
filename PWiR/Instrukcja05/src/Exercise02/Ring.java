@@ -4,21 +4,22 @@ import Exercise02.caller.Caller;
 
 import java.util.concurrent.Semaphore;
 
-public class Ring extends Thread {
+public class Ring {
+    private static int PERMITS = 3;
+    private static int SIZE = 3;
 
-    public static Semaphore semaphore = new Semaphore(1);
+    public static Semaphore semaphore = new Semaphore(PERMITS);
 
     public static void main(String[] args) {
-        Thread[] thread = new Thread[3];
+
+        Caller[] callers = new Caller[SIZE];
+        Thread[] threads = new Thread[3];
 
         for (int i = 0; i < 3; i++) {
-            thread[i] = new Thread(new Caller());
+            callers[i] = new Caller();
+            threads[i] = new Thread(callers[i]);
+            threads[i].start();
         }
 
-        for (int j = 0; j < 5; j++) {
-            for (Thread t : thread)
-                t.start();
-        }
     }
-
 }
